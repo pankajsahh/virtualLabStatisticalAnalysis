@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import SideBar from "./SideBar";
 import Simulation from "./Simulation";
-import axios from 'axios'
 import Procedure from "./Procedure";
+import Practice from "./Practice";
 
 const Experiment = ({ ExNo }) => {
     const list = [
@@ -11,7 +11,7 @@ const Experiment = ({ ExNo }) => {
         'Objective',
         'Procedure',
         'Simulation',
-        'Assignment',
+        'Practice',
         'PostTest',
         'Reference',
         'Feedback'
@@ -33,6 +33,9 @@ const Experiment = ({ ExNo }) => {
             break;
         case list[4]:
             center = <Simulation />
+            break;
+        case list[5]:
+            center = <Practice />
             break;
         default:
             break;
