@@ -1,5 +1,5 @@
-# Pandas Dataframe from Dicts of series.
 import pandas as pd
-d = {'one' : pd.Series([10, 20, 30, 40],index =['a', 'b', 'c', 'd']),'two' : pd.Series([10, 20, 30, 40],index =['a', 'b', 'c', 'd'])}
-df = pd.DataFrame(d)
-print(df)
+import tabulate 
+data = {'Name':['Tom', 'Jack', 'nick', 'juli'],'marks':[99, 98, 95, 90]}
+df = pd.DataFrame(data, index =['rank1','rank2','rank3','rank4'])
+print(tabulate.tabulate(df, tablefmt='html', headers='keys'))

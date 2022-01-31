@@ -37,7 +37,6 @@ app.use(express.urlencoded( { extended: true, limit: '10mb' } ));
 
 // Configure custom logger middleware
 app.use(logger.dev, logger.combined);
-
 app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(cors({

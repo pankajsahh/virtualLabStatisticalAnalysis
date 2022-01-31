@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link,Routes,Route} from 'react-router-dom'
-import Header from './Header'
 import SideBar from './SideBar'
 const Home = () =>{
     const links=[
@@ -17,12 +16,14 @@ const Home = () =>{
     const changeContent=()=>{}
     return(
         <>
-        <div style={{display:'flex'}}>
+        <div id='home-container'>
         <SideBar list={links} changeContent={changeContent}/>
-        <div>
+    <div style={{margin: 'auto', minWidth: '80vw'}}>
             <span style={{color:'#2c99ce',fontSize:'30px'}}>
                 Data Science
             </span>
+            <p></p>
+            <p></p>
             <Routes>
                 <Route exact path= '/he' element={<Introduction/>} />
                 <Route exact path= '/' element={<Experiments list={list}/>} />
@@ -38,13 +39,9 @@ const Introduction=()=>{
     </div>
 }
 const Experiments=({list})=>{
-    
-    const handleChange=()=>{
-    
-    }
     const data= list.map(ele=><Link to='/ex'>
         {ele}
     </Link>)
-    return <><br/>List Of Experiment <br/>{data}</>
+    return <><br/>List Of Experiment <p></p> <br/>{data}</>
 }
 export default Home

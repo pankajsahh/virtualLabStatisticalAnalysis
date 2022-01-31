@@ -7,7 +7,7 @@
     	"heroku-postbuild": "npm i && cd front && npm i && npm run build ",
         "tsc": "tsc",
         "build": "npm run tsc",
-        "start": "concurrently \"cd ./front && npm start\" \"ts-node-dev --transpile-only ./src/server.ts \"",
+        "start": "ts-node-dev --transpile-only ./src/server.ts ",
         "dev": "concurrently  \"cd ./front && npm start\" \"ts-node-dev --transpile-only ./src/server.ts \"",
         "prod": "tsc && node ./build/src/server.js"
     },

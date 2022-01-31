@@ -59,3 +59,22 @@ input[type="button"]{
     transform: rotate(360deg);
   }
 }
+
+#home-container,#experiment-container,.responsive-flex {
+display: flex;
+width: auto;
+align-self: center;}
+#sidebar {
+  display: none;}
+  @media only screen and (max-width: 600px) {
+
+#home-container,#experiment-container,.responsive-flex,#sidebar {
+  display: block;}
+  }
+table{
+  border-collapse: collapse;
+  align-self: center;
+}
+th,tr,table,td{
+  border: 1px solid black;
+}

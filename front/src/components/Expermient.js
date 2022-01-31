@@ -1,47 +1,50 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SideBar from "./SideBar";
 import Simulation from "./Simulation";
 import Procedure from "./Procedure";
 import Practice from "./Practice";
+let center = <Aim/>
 
 const Experiment = ({ ExNo }) => {
     const list = [
         'Aim',
         'Theory',
         'Objective',
+        'Practice',
         'Procedure',
         'Simulation',
-        'Practice',
         'PostTest',
         'Reference',
         'Feedback'
     ]
-    const [current, setcurrent] = useState(list[0])
+    const [current, setcurrent] = useState(list[0]) 
     const handleClick = (e) => {
         setcurrent(e)
     }
-    let center = ''
     switch (current) {
         case list[0]:
             center = <Aim />
             break;
-        case list[1]:
-            center = <Theory />
+            case list[1]:
+                    center = <Theory />
+            break;
+            case list[2]:
+                    center = <Objective />
             break;
         case list[3]:
-            center = <Procedure />
+            center = <Practice />
             break;
         case list[4]:
-            center = <Simulation />
+            center = <Procedure />
             break;
         case list[5]:
-            center = <Practice />
+            center = <Simulation />
             break;
         default:
             break;
-    }
+        }
     return (
-        <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <div id='experiment-container' >
 
             <SideBar list={list} changeContent={handleClick} />
             <div>
@@ -59,8 +62,15 @@ const Aim = () => {
         To create a dataframe
     </div>
 }
+const Objective=()=>{
+    return(
+        <p>
+            <h2>Objective</h2>
+            <p>The Objective of this Experiment is to learn how to create a pandas Dataframe using diffirent data,</p>
+        </p>
+    )
+}
 const Theory = () => {
-    const [current,setcurrent]=useState(0)
     const list1=[1,2,3]
     const list2=[4,5,6]
     return <div style={{fontSize:'18px',width:'80%',margin:'auto',textJustify:'auto'}}>
