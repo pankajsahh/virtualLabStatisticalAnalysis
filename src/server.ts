@@ -18,13 +18,10 @@ import logger from "./util/logger"
 
 // Load .env Enviroment Variables to process.env
 
-env.load([
-    'PORT',
-    'SECRET'
-]);
 
 
-const { PORT } = process.env;
+
+const PORT  = 4000
 
 // Instantiate an Express Application
 
