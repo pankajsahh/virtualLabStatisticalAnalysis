@@ -1,4 +1,4 @@
-
+const path = require('path')
 
 // Patches
 import { inject, errorHandler } from "express-custom-error"
@@ -58,16 +58,19 @@ app.use('/', router);
 
 // Handle errors
 app.use(errorHandler());
-
-// Handle not valid route
-app.use('*', (req, res) => {
-    res
-    .status(404)
-    .json( {status: false, message: 'Endpoint Not Found'} );
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/../frontend/build/index.html'))
 })
+// Handle not valid route
+//app.use('*', (req, res) => {
+//    res
+//    .status(404)
+//    .json( {status: false, message: 'Endpoint Not Found'} );
+//})
 
 // Open Server on configurated Port
 
+app.use(express.static(path.join(__dirname, '../frontend/build')))
 app.listen(
     PORT,
     () => console.info('Server listening on port ', PORT)
