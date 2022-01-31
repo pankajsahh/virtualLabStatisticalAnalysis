@@ -19,7 +19,6 @@ import logger from "./util/logger"
 // Load .env Enviroment Variables to process.env
 
 env.load([
-    'DB_URL',
     'PORT',
     'SECRET'
 ]);
@@ -51,6 +50,7 @@ app.use('*', (req, res, next) => {
     res.setHeader('Content-Type', 'application/json');
     next();
 })
+app.use(express.static(path.join(__dirname, '../front/build')))
 
 // Assign Routes
 import router from "./routes/router"
@@ -59,7 +59,7 @@ app.use('/', router);
 // Handle errors
 app.use(errorHandler());
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/../frontend/build/index.html'))
+  res.sendFile(path.join(__dirname + '../front/build/index.html'))
 })
 // Handle not valid route
 //app.use('*', (req, res) => {
@@ -70,7 +70,6 @@ app.get('*', (req, res) => {
 
 // Open Server on configurated Port
 
-app.use(express.static(path.join(__dirname, '../frontend/build')))
 app.listen(
     PORT,
     () => console.info('Server listening on port ', PORT)
