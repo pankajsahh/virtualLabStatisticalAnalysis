@@ -18,15 +18,18 @@ import logger from "./util/logger"
 
 // Load .env Enviroment Variables to process.env
 
+env.load([
+    'PORT'
+]);
 
 
-
-const PORT  = 4000
+const { PORT } = process.env;
 
 // Instantiate an Express Application
 
 const app = express();
 app.use(express.static(path.join(__dirname, '../front/build')))
+
 
 // Configure Express App Instance
 app.use(express.json( { limit: '50mb' } ));
@@ -55,7 +58,7 @@ app.use('/', router);
 // Handle errors
 // app.use(errorHandler());
 // app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname + '/../front/build/index.html'))
+//   res.sendFile(path.join(__dirname + '../front/build/index.html'))
 // })
 // Handle not valid route
 //app.use('*', (req, res) => {

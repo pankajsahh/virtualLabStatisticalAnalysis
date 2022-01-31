@@ -1,4 +1,5 @@
+# Pandas Dataframe from Dicts of series.
 import pandas as pd
-data = {'Name':['Tom', 'nick', 'krish', 'jack'],'Age':[20, 21, 19, 18]}
-df = pd.DataFrame(data)
+d = {'one' : pd.Series([10, 20, 30, 40],index =['a', 'b', 'c', 'd']),'two' : pd.Series([10, 20, 30, 40],index =['a', 'b', 'c', 'd'])}
+df = pd.DataFrame(d)
 print(df)
