@@ -20,7 +20,7 @@ const Simulation = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:4000/', { code: val.replace('',""), args: args })
+        axios.post('/', { code: val, args: args })
             .then(res => { setres(res.data); console.log(res.data) })
     }
     const handleSwitch = (e) => {
