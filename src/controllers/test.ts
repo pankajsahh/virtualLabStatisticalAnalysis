@@ -16,8 +16,8 @@ class Test {
             }
         })
         const process=spawn('python3',['./temp.py'])
-        process.stdout.on('data',(data)=>res.send(data))
-        process.stderr.on('data',(data)=>res.send(data))
+        process.stdout.on('data',(data)=>{res.send(data); process.kill()})
+        process.stderr.on('data',(data)=>{res.send(data); process.kill()})
         // process.stdin.write(args)
     }
 }
