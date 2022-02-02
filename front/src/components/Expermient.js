@@ -3,6 +3,13 @@ import SideBar from "./SideBar";
 import Simulation from "./Simulation";
 import Procedure from "./Procedure";
 import Practice from "./Practice";
+
+const Aim = () => {
+    return <div style={{fontSize:'30px'}}>
+        <p><b>AIM</b></p>
+        To create a dataframe
+    </div>
+}
 let center = <Aim/>
 
 const Experiment = ({ ExNo }) => {
@@ -56,12 +63,7 @@ const Experiment = ({ ExNo }) => {
         </div>
     )
 }
-const Aim = () => {
-    return <div style={{fontSize:'30px'}}>
-        <p><b>AIM</b></p>
-        To create a dataframe
-    </div>
-}
+
 const Objective=()=>{
     return(
         <p>

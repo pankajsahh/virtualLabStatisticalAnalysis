@@ -26,7 +26,7 @@ const Home = () =>{
             <p></p>
             <Routes>
                 <Route exact path= '/he' element={<Introduction/>} />
-                <Route exact path= '/' element={<Experiments list={list}/>} />
+                <Route exact path= '*' element={<Experiments list={list}/>} />
             </Routes>
         </div>
         </div>
