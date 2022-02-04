@@ -1,3 +1,4 @@
-/* .crousel{
-    height: 20% important!;
-} */
+.crousel{
+    overflow: hidden;
+    height: 20% ;
+}

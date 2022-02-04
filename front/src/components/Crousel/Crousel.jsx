@@ -1,5 +1,8 @@
-import React from 'react';
+import photo1 from '../../assets/1.jpg'
+import photo2 from '../../assets/18.jpg'
+import photo3 from '../../assets/19.jpg'
 import './Crousel.css'
+import React from 'react';
 import {
   MDBCarousel,
   MDBCarouselInner,
@@ -9,20 +12,21 @@ import {
 
 export default function App() {
   return (
-    <div >
-      <MDBCarousel showIndicators showControls>
-        <MDBCarouselInner>
-          <MDBCarouselItem className='active' >
-            <MDBCarouselElement src='https://mdbootstrap.com/img/new/slides/041.webp' alt='...' />
-          </MDBCarouselItem>
-          <MDBCarouselItem >
-            <MDBCarouselElement src='https://mdbootstrap.com/img/new/slides/042.webp' alt='...' />
-          </MDBCarouselItem >
-          <MDBCarouselItem >
-            <MDBCarouselElement src='https://mdbootstrap.com/img/new/slides/043.webp' alt='...' />
-          </MDBCarouselItem >
-        </MDBCarouselInner>
-      </MDBCarousel>
+    <div className='crousel'>
+         <MDBCarousel showControls>
+      <MDBCarouselInner>
+        <MDBCarouselItem className='active'>
+          <MDBCarouselElement src={photo1} alt='...' />
+        </MDBCarouselItem>
+        <MDBCarouselItem>
+          <MDBCarouselElement src={photo2} alt='...' />
+        </MDBCarouselItem>
+        <MDBCarouselItem>
+          <MDBCarouselElement src={photo3} alt='...' />
+        </MDBCarouselItem>
+      </MDBCarouselInner>
+    </MDBCarousel>
     </div>
+
   );
 }
