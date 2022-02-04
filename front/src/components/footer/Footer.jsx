@@ -1,9 +1,11 @@
 import React from 'react';
 import { MDBFooter } from 'mdb-react-ui-kit';
 
+import './footer.css'
+
 export default function App() {
   return (
-    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
+    <MDBFooter  className='text-center text-lg-start text-muted '>
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
           <span>Get connected with andc on social networks:</span>
@@ -29,12 +31,12 @@ export default function App() {
         </div>
       </section>
 
-     
-        <div className='container text-center text-md-start mt-5'>
+      <div className='vivColor'>
+        <div className='container text-center gradient__bg text-md-start mt-5  p-4 '>
           <div className='row mt-3'>
             <div className='col-md-3 col-lg-4 col-xl-3 mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
-                <i className='fas fa-gem me-3'></i>ANDC Vlabs
+                <i className='fas fa-gem me-3'></i>Andc Virtual-Labs
               </h6>
               <p>
                 Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
@@ -44,24 +46,24 @@ export default function App() {
 
 
             <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>Links</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#home' className='text-reset'>
                   Home
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#about' className='text-reset'>
                   About Us
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#contact' className='text-reset'>
                   Contact Us
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='#feedback' className='text-reset'>
                   Feedback
                 </a>
               </p>
@@ -73,10 +75,6 @@ export default function App() {
                 <i className='fas fa-home me-3'></i> kalkaji new delhi
               </p>
               <p>
-                <i className='fas fa-envelope me-3'></i>
-                pankajsahu9899@gmail.com
-              </p>
-              <p>
                 <i className='fas fa-phone me-3'></i> + 91 9899819133
               </p>
               <p>
@@ -85,12 +83,12 @@ export default function App() {
             </div>
           </div>
         </div>
-    
+      </div>
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-         PANKAJsahu
+        &copy; 2021 Copyright &nbsp;
+        <a className='text-reset fw-bold' href='https://www.andcollege.du.ac.in/' target="_blank">
+          Acharya Narendra Dev College
         </a>
       </div>
     </MDBFooter>
