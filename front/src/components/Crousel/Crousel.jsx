@@ -15,10 +15,8 @@ export default function App() {
     <div className='crousel'>
          <MDBCarousel showControls>
       <MDBCarouselInner>
+       
         <MDBCarouselItem className='active'>
-          <MDBCarouselElement src={photo1} alt='...' />
-        </MDBCarouselItem>
-        <MDBCarouselItem>
           <MDBCarouselElement src={photo2} alt='...' />
         </MDBCarouselItem>
         <MDBCarouselItem>
