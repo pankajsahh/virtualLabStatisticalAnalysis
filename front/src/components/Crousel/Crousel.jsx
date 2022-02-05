@@ -8,12 +8,12 @@ import logo  from '../../assets/1.jpg'
 export default function App() {
   return (
     <div>
-            <div className="text-container">
+            <div className="text-container section__padding">
                 <div className="txt">
                     <div className="txt-box">
                         <h2 className="h2-part-1">Welcome to <span className="h2-part-2">Andc virtual labs</span></h2>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ipsam accusamus eum blanditiis temporibus totam praesentium repudiandae ducimus dignissimos distinctio reprehenderit, fuga laudantium labore vitae natus autem in? Ad praesentium, laboriosam voluptate esse molestias hic eveniet odit? Veniam voluptatum soluta qui distinctio numquam libero itaque facere. Dolor excepturi autem dolores.
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nulla? uptatum soluta qui distinctio numquam libero itaque facere. Dolor excepturi autem dolores.
                         </p>
                         <div className="button-set">
                             <MDBBtn outline className='mx-2 button-1' color='info'>Explore Experiments</MDBBtn>
@@ -23,9 +23,7 @@ export default function App() {
                     </div>
                 </div>
                 <div className="img-part">
-                    <div className="child" >
-                        <div className="subchild"><img src={logo} alt="..." /></div>
-                    </div>
+                    <img src={logo} alt="..." />
                 </div>
             </div>
         </div>
