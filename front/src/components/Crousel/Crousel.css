@@ -59,3 +59,12 @@
     clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
 }
 
+.btn-outline-info {
+    color: #012043;
+    border-color: #012043;
+}
+.btn-outline-info:hover {
+    color: #000;
+    background-color: #0dcaf0;
+    border-color: #01244a;
+}
