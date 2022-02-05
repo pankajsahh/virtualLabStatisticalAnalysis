@@ -1,4 +1,8 @@
-.crousel{
-    overflow: hidden;
-    height: 20% ;
+.carousel-inner{
+    z-index: 1;
+
+}
+
+.carousel{
+    height: 50%;
 }

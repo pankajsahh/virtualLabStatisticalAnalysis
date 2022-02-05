@@ -1,13 +1,12 @@
 
 .navbar {
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: auto;
     
 
 }
-
 .navbar__links {
     flex:1;
     display: flex;
@@ -17,7 +16,7 @@
 }
 
 .navbar__links-logo {
-    margin-left: 2rem;
+    margin-right: 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -30,7 +29,7 @@
 }
 
 .navbar__links-logo h6{
-    color: rgb(83, 67, 112);
+    color: #fff;
     margin-left:1.5rem ;
     letter-spacing: 3px;
     font-size: 25px;
@@ -47,7 +46,6 @@
 .navbar__links-container p ,
 .navbar__menu-container p {
     color:rgb(15, 15, 15);
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
@@ -95,7 +93,7 @@
 }
 .navbar__menu-container p a ,
 .navbar__links-container p a{
-    color: hsl(0, 2%, 22%);
+    color: #fff;
    
 }
 .navbar__menu__container-links-sign{
@@ -125,9 +123,18 @@
 
 @media screen and (max-width : 600px) {
     .navbar{
-        padding: 2rem
+        padding: 1.5rem
     }   
     .navbar__menu-container{
         top:20px
+    }
+    .navbar__links-logo h6{
+        font-size: 15px;
+        letter-spacing: 1.5px;
+
+    }
+    .navbar__links-logo img{
+        height: 40px;
+        width: 40px;
     }
 }
