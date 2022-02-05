@@ -24,13 +24,16 @@
     color: indigo;
 }
 .txt-box{
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: baseline;
+    align-content: flex-start;
 }
 .txt-box p{
     /* mt-2 text-sm text-gray-500 md:text-base */
     color: grey;
     
-
 
 }
 .button-set{
@@ -55,15 +58,4 @@
     height: fit-content;
     clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
 }
-.child{
-    /* h-full object-cover */
-    height: 100%;
-    object-fit: cover;
-    background-color: aqua;
-}
-.subchild{
-    /* h-full bg-black opacity-25 */
-    height: 100%;
-    background-color: black;
-    opacity: 85%;
-}
+
