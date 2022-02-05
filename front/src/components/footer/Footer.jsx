@@ -31,8 +31,8 @@ export default function App() {
         </div>
       </section>
 
-      <div className='vivColor'>
-        <div className='container text-center gradient__bg text-md-start mt-5  p-4 '>
+      <div className='.'>
+        <div className='container text-center  text-md-start mt-5  p-4 '>
           <div className='row mt-3'>
             <div className='col-md-3 col-lg-4 col-xl-3 mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4 vivTextColor'>
@@ -92,6 +92,15 @@ export default function App() {
         </div>
       </div>
 
+<<<<<<< HEAD
+=======
+      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+        &copy; 2021 Copyright &nbsp;
+        <a className='text-reset fw-bold' href='https://www.andcollege.du.ac.in/' rel="noreferrer" target="_blank">
+          Acharya Narendra Dev College
+        </a>
+      </div>
+>>>>>>> 540e1de091e1e290ef06e112b14df2ac0c68ca13
     </MDBFooter>
   );
 }

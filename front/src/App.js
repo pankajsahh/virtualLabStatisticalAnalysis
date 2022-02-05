@@ -6,6 +6,7 @@ import Experiment from './components/experiment/Expermient';
 import Navbar from './components/Header/Navbar.jsx';
 import Home from './components/Home/Home.jsx';
 import Footer from './components/footer/Footer.jsx';
+// import ExperimentsList from './components/pages/ExperimentList/ExperimentsList';
 
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route exact path='/' element={<Home/>} />
           <Route exact path='/experiment' element ={<Experiment/>}/>
       </Routes>
+      
       <Footer/>
     </div>
   );
