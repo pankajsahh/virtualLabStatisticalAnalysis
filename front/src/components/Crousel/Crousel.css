@@ -2,21 +2,24 @@
 .text-container{
     display: flex;
     flex-direction: row;
-    background-color: white;
+    align-items: center;
+    justify-content: center;
 
     
 }
-/* flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2 */
+
 .txt{
     display: flex;
     align-items: center;
-    text-align: center;
-    width: 54%;
+    justify-content: center;
+    
 
 }
 .h2-part-1{
-    /* text-3xl font-semibold text-gray-800 md:text-4xl */
-    font-size: xx-large;
+    
+    font-size: 45px;
+    letter-spacing: 3px;
+    line-height:55px ;
     font: bold;
     
 }
@@ -26,45 +29,48 @@
 .txt-box{
     display: flex;
     flex-direction: column;
-    padding: 20px;
     align-items: baseline;
     align-content: flex-start;
 }
 .txt-box p{
-    /* mt-2 text-sm text-gray-500 md:text-base */
     color: grey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     
 
 }
 .button-set{
-    /* flex justify-center lg:justify-start mt-6 */
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+
 }
-.button-1{
-    /* px-3 py-2 lg:px-4 lg:py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800" */
-    padding: 2px 3px;
+.button{
+     padding: 10px;
     
 }
-.button-2{
-    /* px-3 py-2 mx-4 lg:px-4 lg:py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400 */
-    padding: 2px 3px;
+
+.button:nth-child(1){
+    margin-right: 1.5rem;
+}
+.button {
+    color: #012043;
+    border-color: #012043;
+    
+    background-color: transparent;
+    border: 1px solid #01244a;
+    border-radius: 8px;
+}
+.button:hover {
+    color: rgb(255, 255, 255);
+    background-color: #01243a;
+    border-color: #012043;
 }
 .img-part{
-    /* hidden lg:block lg:w-1/2" style="clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%); */
     overflow: hidden;
     display: block;
     height: fit-content;
     clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
-}
-
-.btn-outline-info {
-    color: #012043;
-    border-color: #012043;
-}
-.btn-outline-info:hover {
-    color: #000;
-    background-color: #0dcaf0;
-    border-color: #01244a;
 }

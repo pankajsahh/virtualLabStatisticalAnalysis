@@ -6,33 +6,8 @@ import './footer.css'
 export default function App() {
   return (
     <MDBFooter  className='text-center text-lg-start text-muted '>
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-        <div className='me-5 d-none d-lg-block'>
-          <span>Get connected with andc on social networks:</span>
-        </div>
-
-        <div>
-          <a href='https://www.facebook.com/Acharya-Narendra-Dev-College-University-of-Delhi-Govindpuri-Kalkaji-839455442819466' className='me-4 text-reset'>
-            <i className='fab fa-facebook-f'></i>
-          </a>
-          <a href='https://twitter.com/ANDCollege_DU' className='me-4 text-reset'>
-            <i className='fab fa-twitter'></i>
-          </a>
-          <a href='https://www.andcollege.du.ac.in/' className='me-4 text-reset'>
-            <i className='fab fa-google'></i>
-          </a>
-          <a href='https://www.instagram.com/andcollege_du/' className='me-4 text-reset'>
-            <i className='fab fa-instagram'></i>
-          </a>
-          <a href='https://www.linkedin.com/school/acharya-narendra-dev-college/' className='me-4 text-reset'>
-            <i className='fab fa-linkedin'></i>
-          </a>
-          
-        </div>
-      </section>
-
-      <div className='.'>
-        <div className='container text-center  text-md-start mt-5  p-4 '>
+      <div className='vivColor'>
+        <div className='container text-center  text-md-start mt-5   gradient__bg section__padding'>
           <div className='row mt-3'>
             <div className='col-md-3 col-lg-4 col-xl-3 mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4 vivTextColor'>
@@ -92,15 +67,6 @@ export default function App() {
         </div>
       </div>
 
-<<<<<<< HEAD
-=======
-      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        &copy; 2021 Copyright &nbsp;
-        <a className='text-reset fw-bold' href='https://www.andcollege.du.ac.in/' rel="noreferrer" target="_blank">
-          Acharya Narendra Dev College
-        </a>
-      </div>
->>>>>>> 540e1de091e1e290ef06e112b14df2ac0c68ca13
     </MDBFooter>
   );
 }
