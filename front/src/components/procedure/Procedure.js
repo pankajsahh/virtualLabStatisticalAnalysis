@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './procedure.css';
+
 const Procedure=()=>{
     return(
         <>

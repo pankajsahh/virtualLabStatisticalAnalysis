@@ -5,12 +5,13 @@ import './navbar.css' ;
 import { RiMenu3Line , RiCloseLine } from 'react-icons/ri'
 // importing logo 
 import logo from '../../assets/andc_logo.png';
+import { Link } from 'react-router-dom';
 
 
 // construncting menu 
 const Menu = () =>(
     <>
-        <p><a href="#home">Home</a></p>
+        <p><a href="/">Home</a></p>
         <p><a href="#about">About Us</a></p>
         <p><a href="#Contact Us">Contact Us</a></p>
         

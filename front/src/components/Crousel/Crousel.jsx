@@ -24,6 +24,6 @@ export default function App() {
       </MDBCarouselInner>
     </MDBCarousel>
     </div>
-
+  
   );
 }

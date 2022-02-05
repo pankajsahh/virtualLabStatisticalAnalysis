@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import SideBar from "./SideBar";
-import Simulation from "./Simulation";
-import Procedure from "./Procedure";
-import Practice from "./Practice";
+import SideBar from "../sidebar/SideBar";
+import Simulation from "../Simulation";
+import Procedure from "../procedure/Procedure";
+import Practice from "../Practice";
+
+import './experiment.css';
 
 const Aim = () => {
     return <div style={{fontSize:'30px'}}>
@@ -51,7 +53,7 @@ const Experiment = ({ ExNo }) => {
             break;
         }
     return (
-        <div id='experiment-container' >
+        <div className='experiment-container section__padding' id="experiment" >
 
             <SideBar list={list} changeContent={handleClick} />
             <div>
