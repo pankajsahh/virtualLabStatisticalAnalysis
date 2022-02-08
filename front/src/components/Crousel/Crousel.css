@@ -1,4 +1,6 @@
 
+
+
 .text-container{
     display: flex;
     flex-direction: row;
@@ -40,22 +42,27 @@
     
 
 }
+
+.img-part{
+    overflow: hidden;
+    display: block;
+    height: fit-content;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
+}
+
 .button-set{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-}
-.button{
-     padding: 10px;
     
 }
 
 .button:nth-child(1){
     margin-right: 1.5rem;
 }
-.button {
+.button a{
+    padding: 10px;
     color: #012043;
     border-color: #012043;
     
@@ -63,14 +70,47 @@
     border: 1px solid #01244a;
     border-radius: 8px;
 }
-.button:hover {
+.button a:hover {
     color: rgb(255, 255, 255);
     background-color: #01243a;
     border-color: #012043;
 }
-.img-part{
-    overflow: hidden;
-    display: block;
-    height: fit-content;
-    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
+
+/* responsive homebar */
+
+@media screen and (max-width : 850px) {
+    .button a{
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding: 5px;
+
+    }
+    .button:nth-child(1){
+        margin-right: 1rem;
+    }
+
+    
 }
+
+@media screen and (max-width : 550px){
+    .text-container{
+        flex-direction: column;
+    }
+    .h2-part-1{
+        font-size: 36px;
+        letter-spacing: 2px;
+        line-height: 49px;
+    }
+    
+    .img-part img{
+        max-width: 99%;
+        max-height: 99%;
+    }
+    .img-part{
+        clip-path:none;
+    }
+
+    
+}
+
+

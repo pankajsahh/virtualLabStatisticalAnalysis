@@ -1,7 +1,10 @@
 import React from 'react'
-import { Link, Routes, Route } from 'react-router-dom'
-import SideBar from './SideBar'
-const Home = () => {
+import { Link, Routes, Route } from 'react-router-dom';
+import SideBar from '../../components/sidebar/SideBar';
+import './listExp.css';
+
+
+const ListExp = () => {
     const links = [
         'Introduction',
         'Objective',
@@ -16,17 +19,15 @@ const Home = () => {
     const changeContent = () => { }
     return (
         <>
-            <div id='home-container'>
+            <div id='ListExp-container ' className='container section__padding'>
                 <SideBar list={links} changeContent={changeContent} />
-                <div style={{ margin: 'auto', minWidth: '80vw' }}>
+                <div className='exp'>
                     <span style={{ color: '#2c99ce', fontSize: '30px' }}>
                         Data Science
                     </span>
-                    <p></p>
-                    <p></p>
                     <Routes>
-                        <Route exact path='/he' element={<Introduction />} />
-                        <Route exact path='*' element={<Experiments list={list} />} />
+                        <Route exact path='/intro' element={<Introduction />} />
+                        <Route exact path='/*' element={<Experiments list={list} />} />
                     </Routes>
                 </div>
             </div>
@@ -39,9 +40,9 @@ const Introduction = () => {
     </div>
 }
 const Experiments = ({ list }) => {
-    const data = list.map(ele => <Link to='/ex'>
+    const data = list.map(ele => <Link to='/exp'>
         {ele}
     </Link>)
     return <><br />List Of Experiment <p></p> <br />{data}</>
 }
-export default Home
+export default ListExp
