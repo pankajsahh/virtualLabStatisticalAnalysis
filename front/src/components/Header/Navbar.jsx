@@ -11,9 +11,9 @@ import { Link } from 'react-router-dom';
 // construncting menu 
 const Menu = () =>(
     <>
-        <p><a href="/">Home</a></p>
-        <p><a href="#about">About Us</a></p>
-        <p><a href="#Contact Us">Contact Us</a></p>
+        <p><Link to="/">Home</Link></p>
+        <p><Link to="#about">About Us</Link></p>
+        <p><Link to="#Contact Us">Contact Us</Link></p>
         
         
     </>
@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className='navbar section__padding gradient__bg' id='home'>
             <div className='navbar__links'>
                 <div className='navbar__links-logo'>
-                    <img src ={logo} alt ="logo__image"></img>
+                    <img src ={logo} alt ="logo__image" href="/"></img>
                     <h6>Andc Virtual-Labs</h6>
 
                 </div>

@@ -4,6 +4,7 @@ import React from 'react';
 
 
 import logo  from '../../assets/1.jpg'; // Note photo should 800px width and 350px height
+import { Link } from 'react-router-dom';
 
 
 export default function App() {
@@ -17,9 +18,10 @@ export default function App() {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dignissimos.
                         </p>
                         <div className="button-set">
-                            <a className='button' href="/experiment">Explore Experiments</a>
-                            <a className='button' href="/feedback">Feedback</a>
-                            
+                            <p className='button'><Link to="/experiments">Explore Experiments</Link></p>
+                            <p className='button'><Link to="/feedback">Feedback</Link></p>
+                            {/* <a className='button' href="/experiment">Explore Experiments</a>
+                            <a className='button' href="/feedback">Feedback</a> */}
                         </div>
                     </div>
                 </div>
