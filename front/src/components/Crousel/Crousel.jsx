@@ -2,9 +2,9 @@ import './Crousel.css'
 import React from 'react';
 
 
-import { MDBBtn } from 'mdb-react-ui-kit';
-import logo  from '../../assets/1.jpg';
-import { Link } from 'react-router-dom';
+
+import logo  from '../../assets/1.jpg'; // Note photo should 800px width and 350px height
+
 
 export default function App() {
   return (
