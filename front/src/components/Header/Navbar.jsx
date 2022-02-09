@@ -28,8 +28,12 @@ const Navbar = () => {
         <div className='navbar section__padding gradient__bg' id='home'>
             <div className='navbar__links'>
                 <div className='navbar__links-logo'>
-                    <img src ={logo} alt ="logo__image" href="/"></img>
-                    <h6>Andc Virtual-Labs</h6>
+                    <Link to="/">
+                        <img src ={logo} alt ="logo__image" href="/"></img>
+                    </Link>
+                    <Link to="/">
+                        <h6>Andc Virtual-Labs</h6>
+                    </Link>
 
                 </div>
                 <div className='navbar__links-container' >

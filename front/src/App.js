@@ -1,15 +1,15 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
 
-import Aim from './components/pages/Experiment-Content/Aim';
-import PostTest from './components/pages/Experiment-Content/Post-test';
-import Objective from './components/pages/Experiment-Content/Objective';
-import FeedBack from './components/pages/Experiment-Content/Feed-Back';
-import Theory from './components/pages/Experiment-Content/Theory';
-import Procedure from './components/pages/Experiment-Content/Procedure';
-import Reference from './components/pages/Experiment-Content/References';
-import Simulation from './components/pages/Experiment-Content/Simulation';
-import Practice from './components/pages/Experiment-Content/Practice';
+import Aim from './components/pages/Experiment-1-Content/Aim';
+import PostTest from './components/pages/Experiment-1-Content/Post-test';
+import Objective from './components/pages/Experiment-1-Content/Objective';
+import FeedBack from './components/pages/Experiment-1-Content/Feed-Back';
+import Theory from './components/pages/Experiment-1-Content/Theory';
+import Procedure from './components/pages/Experiment-1-Content/procedure/Procedure';
+import Reference from './components/pages/Experiment-1-Content/References';
+import Simulation_exp1 from './components/pages/Experiment-1-Content/Simulation_exp1';
+import Practice_exp1 from './components/pages/Experiment-1-Content/Practice_exp1';
 
 
 
@@ -28,7 +28,7 @@ function App() {
         <Navbar />
         <Routes >
           <Route exact path='/' element={<Home />} />
-          <Route path='/Experiments/*' element={<ListExp />}/ >
+          <Route path='/Experiments/*' element={<ListExp />} />
             <Route path='DataAnalysis/' element={<ExpNav />}>
               <Route path='Aim/' element={<Aim />} />
               <Route path='PostTest/' element={<PostTest />} />
@@ -37,8 +37,8 @@ function App() {
               <Route path='Theory/' element={<Theory />} />
               <Route path='Procedure/' element={<Procedure />} />
               <Route path='Reference/' element={<Reference />} />
-              <Route path='Simulation/' element={<Simulation />} />
-              <Route path='Practice/' element={<Practice />} />
+              <Route path='Simulation/' element={<Simulation_exp1 />} />
+              <Route path='Practice/' element={<Practice_exp1 />} />
             </Route>
         </Routes>
         <Footer />

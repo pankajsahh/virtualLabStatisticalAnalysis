@@ -1,7 +1,7 @@
 import React, {  useState } from "react";
 import SideBar from "../../sidebar/SideBar";
 import Simulation from "../../Simulation";
-import Procedure from "../../procedure/Procedure";
+import Procedure from "../Experiment-1-Content/procedure/Procedure";
 import Practice from "../../Practice";
 
 import './experiment.css';
