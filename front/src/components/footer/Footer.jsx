@@ -60,7 +60,7 @@ export default function App() {
         </div>
         <div className='text-center p-4 vivTextColor' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
           &copy; 2021 Copyright &nbsp;
-          <a className='text-reset fw-bold ' href='https://www.andcollege.du.ac.in/' target="_blank">
+          <a className='text-reset fw-bold ' href='https://www.andcollege.du.ac.in/' target="__blank" >
             Acharya Narendra Dev College &nbsp; 
           </a>
           All rights reserved 

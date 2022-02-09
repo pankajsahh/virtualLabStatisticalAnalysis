@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 
 import "./sidebar.css";
-import { BiCaretUp,BiCaretDown } from 'react-icons/bi';
+// import { BiCaretUp,BiCaretDown } from 'react-icons/bi';
 
 const SideBar = (props) => {
     const [current, setcurrent] = useState("none");
-    const [open, setopen] = useState(true);
+    // const [open, setopen] = useState(true);
+    const open=true;
     const list = props.list;
     const handleClick = (e) => {
         setcurrent(e.target.id);
         props.changeContent(current);
     };
     const links = list.map((ele) => (
-        <div
+        <div key={ele}
             id={ele}
             onClick={handleClick}
             style={{
