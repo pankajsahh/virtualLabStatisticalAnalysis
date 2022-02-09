@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link, Routes, Route } from 'react-router-dom';
-import SideBar from '../../components/sidebar/SideBar';
+import { Link, Routes, Route} from 'react-router-dom';
+import SideBar from '../../sidebar/SideBar';
 import './listExp.css';
 
 
@@ -31,6 +31,7 @@ const ListExp = () => {
                     </Routes>
                 </div>
             </div>
+           
         </>
     )
 }
@@ -40,9 +41,9 @@ const Introduction = () => {
     </div>
 }
 const Experiments = ({ list }) => {
-    const data = list.map(ele => <Link to='/exp'>
+    const data = list.map(ele => <Link to='/DataAnalysis/Aim' key={ele}>
         {ele}
     </Link>)
     return <><br />List Of Experiment <p></p> <br />{data}</>
 }
-export default ListExp
+export default ListExp;

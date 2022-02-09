@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import SideBar from "../sidebar/SideBar";
-import Simulation from "../Simulation";
-import Procedure from "../procedure/Procedure";
-import Practice from "../Practice";
+import React, {  useState } from "react";
+import SideBar from "../../sidebar/SideBar";
+import Simulation from "../../Simulation";
+import Procedure from "../../procedure/Procedure";
+import Practice from "../../Practice";
 
 import './experiment.css';
 
