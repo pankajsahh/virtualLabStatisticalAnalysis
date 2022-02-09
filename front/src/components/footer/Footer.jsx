@@ -2,6 +2,7 @@ import React from 'react';
 import { MDBFooter } from 'mdb-react-ui-kit';
 
 import './footer.css'
+import { Link } from 'react-router-dom';
 
 export default function App() {
   return (
@@ -23,24 +24,24 @@ export default function App() {
             <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4 vivTextColor'>Links</h6>
               <p>
-                <a href='#home' className='text-reset'>
+                <Link to='/' className='text-reset'>
                   Home
-                </a>
+                </Link>
               </p>
               <p>
-                <a href='#about' className='text-reset'>
+                <Link to='/about' className='text-reset'>
                   About Us
-                </a>
+                </Link>
               </p>
               <p>
-                <a href='#contact' className='text-reset'>
+                <Link to='/contact' className='text-reset'>
                   Contact Us
-                </a>
+                </Link>
               </p>
               <p>
-                <a href='#feedback' className='text-reset'>
+                <Link to='/feedback' className='text-reset'>
                   Feedback
-                </a>
+                </Link>
               </p>
             </div>
 

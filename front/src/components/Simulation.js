@@ -29,6 +29,8 @@ const Simulation = () => {
     }
     return (
         <>
+            {/* <div className="section__padding"> */}
+
             Choose your Method:
             <select value={current} onChange={handleSwitch}>
                 <option value={0}>Select Method</option>
@@ -52,6 +54,7 @@ const Simulation = () => {
                 <div className="Container" dangerouslySetInnerHTML={{__html: res}}></div>
                 </div>
             </div>
+            {/* </div> */}
         </>
     )
 }

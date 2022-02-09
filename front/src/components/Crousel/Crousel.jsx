@@ -2,7 +2,8 @@ import './Crousel.css'
 import React from 'react';
 
 
-import Buttons from '../Exp-Nav-Buttons/Buttons';
+// import Buttons from '../Exp-Nav-Buttons/Buttons';
+
 import logo from '../../assets/1.jpg'; // Note photo should 800px width and 350px height
 import { Link } from 'react-router-dom';
 
@@ -18,9 +19,8 @@ export default function App() {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dignissimos.
                         </p>
                         <div className="button-set">
-                            <div className="button"><Link to="/experiments"><Buttons >Explore Experiments</Buttons></Link></div>
-                            <div className="button"> <Link to="/feedback"><Buttons >Feedback</Buttons></Link></div>
-                            
+                            <p className='button'><Link to="/experiments">Explore Experiments</Link></p>
+                            <p className='button'><Link to="/feedback">Feedback</Link></p>
                            
                         </div>
                     </div>

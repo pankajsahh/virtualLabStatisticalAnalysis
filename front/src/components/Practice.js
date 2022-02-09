@@ -28,7 +28,7 @@ const Practice =()=>{
     return(
         <>
         <div>
-            <h3>Instructions :</h3>
+            <h2><b>Instructions </b></h2>
             <p>Just click the next button to see which element goes to which position.</p>
             <h4>On runing: pandas.DataFrame([[1,2,3],[4,5,6],[7,8,9]], [0,1,2],['One','Two','Three'] )</h4>
             <h1>
