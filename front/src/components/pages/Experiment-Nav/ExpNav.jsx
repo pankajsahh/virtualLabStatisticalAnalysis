@@ -7,3 +7,4 @@ const ExpNav =()=>{
         </>
     )
 }
+export default ExpNav;
