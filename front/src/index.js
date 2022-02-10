@@ -6,11 +6,13 @@ import './index.css';
 import App from './App';
 import { BrowserRouter  }  from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-
+import Store from './components/context/store';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+    <Store>
     <App />
+    </Store>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
