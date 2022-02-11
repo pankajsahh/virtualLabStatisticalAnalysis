@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, Routes, Route} from 'react-router-dom';
-import SideBar from '../../sidebar/SideBar';
+
 import './listExp.css';
 
 
@@ -15,8 +15,9 @@ const ListExp = () => {
     ]
     const list = [
         'Creating Data Frame',
+        
     ]
-    const changeContent = () => { }
+    
     return (
         <>
             <div id='ListExp-container ' className='container section__padding'>
@@ -30,8 +31,6 @@ const ListExp = () => {
                         )
                     })}
                 </div>
-                
-                
                 <div className='exp'>
                     <span style={{ color: '#2c99ce', fontSize: '30px' }}>
                         Data Science
