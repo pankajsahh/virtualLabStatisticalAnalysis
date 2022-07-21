@@ -25,7 +25,7 @@ function App() {
         <Navbar />
         <Routes >
             <Route path='/' element={<ExpNav />}>
-              <Route path='Aim/' element={<Aim />} />
+              <Route path='/' element={<Aim />} />
               <Route path='Quizz/' element={<Quizz />} />
               <Route path='Objective/' element={<Objective />} />
               <Route path='Theory/' element={<Theory />} />
