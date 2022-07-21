@@ -14,7 +14,6 @@ import PracticeExp1 from './components/pages/Experiment-1-Content/Practice_exp1'
 
 import ExpNav from './components/pages/Experiment-Nav/ExpNav';
 import Navbar from './components/Header/Navbar.jsx';
-import Home from './components/pages/Home/Home.jsx';
 import Footer from './components/footer/Footer.jsx';
 import Store from './components/context/store';
 
@@ -25,8 +24,7 @@ function App() {
       <Store>
         <Navbar />
         <Routes >
-          <Route exact path='/' element={<Home />} />
-            <Route path='DataAnalysis/' element={<ExpNav />}>
+            <Route path='/' element={<ExpNav />}>
               <Route path='Aim/' element={<Aim />} />
               <Route path='Quizz/' element={<Quizz />} />
               <Route path='Objective/' element={<Objective />} />
