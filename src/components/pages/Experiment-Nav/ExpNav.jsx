@@ -18,7 +18,7 @@ const ExpNav = () => {
             <div className="Experiment-bar section__padding">
                 {list.map((e) => {
                     return (
-                       <Link key={e} to={e=="Aim"?"":e}>
+                       <Link key={e} to={e==="Aim"?"":e}>
                         <div className="nav_Bar">
                             <img src="" alt="" />
                             <button className="exp-button" >{e}</button>

@@ -85,3 +85,10 @@ a {
     padding: 2rem;
   }
 }
+
+.llink{
+  border-radius: 3px;
+  box-shadow: -6px 4px 15px 6px #90a2b4;
+  color: #7272f0;
+  margin: 50px;
+}
